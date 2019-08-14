@@ -1,0 +1,6 @@
+<!--pages/messageDetail/messageDetail.wxml-->
+<view class="main">
+  <view class="section">
+    <view class="article"> {{content.content}}</view>
+  </view>
+</view>

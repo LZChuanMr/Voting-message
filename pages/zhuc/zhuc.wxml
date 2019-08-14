@@ -1,0 +1,24 @@
+<!--pages/zhuc/zhuc.wxml-->
+
+<view class='bg'>
+<view class='changeInfo'>
+
+  <image src='../../image/000.png' class='img01'></image>
+
+<view class='changeInfoName'>
+     <input placeholder='请输入姓名' type='text' bindinput='getFullNameValue' value='{{fullName}}' /> 
+  </view>
+  <view class='changeInfoName'>
+     <input placeholder='请输入手机号'  type='text' bindinput='getPhoneNumValue' value='{{phoneNum}}'/> 
+  </view>
+  <view class='changeInfoName'>
+     <input placeholder='请输入密码'  type='password' bindinput='getPasswordValue' value='{{password}}'/> 
+  </view>
+  <view class='changeInfoName'>
+     <input placeholder='请输入部门' type='text' bindinput='getDepartmentValue' value='{{department}}' /> 
+  </view>
+  <button class='changeBtn1' bindtap='save'>注册</button>
+  <button class='changeBtn2' bindtap='goTologin'>直接登录</button>
+
+</view>
+</view>

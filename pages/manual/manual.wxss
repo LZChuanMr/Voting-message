@@ -1,0 +1,5 @@
+/* pages/manual/manual.wxss */
+.tt{
+  width: 100%;
+  height: 130rpx;
+}

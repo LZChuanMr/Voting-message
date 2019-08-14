@@ -1,0 +1,215 @@
+<!--logs.wxml-->
+<view class="container">
+  <image src='../../image/000.png' class='tt'></image>
+  <view class='title'>部门</view>
+  <view class='wrap title'>
+    <view>工作态度:</view>
+  </view>
+</view>
+<view class='item'>
+  <text>总裁办</text>
+  <radio-group class="option"bindchange="radioChange"> 
+    <label class="option">
+      <radio checked="" value="0" name="1" >差</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="1" name="1">良</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="2" name="1">优</radio>
+    </label>
+  </radio-group>
+</view>
+<view class='item'>
+  <text>营销中心</text>
+  <radio-group class="option" bindchange="radioChange2">
+    <label class="option">
+      <radio checked="" value="0" name="2">差</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="1" name="2">良</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="2" name="2">优</radio>
+    </label>
+  </radio-group>
+</view>
+<view class='item'>
+  <text>产品与资源管理中心</text>
+  <radio-group class="option" bindchange="radioChange3">
+    <label class="option">
+      <radio checked="" value="0" name="3">差</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="1" name="3">良</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="2" name="3">优</radio>
+    </label>
+  </radio-group>
+</view>
+<view class='item'>
+  <text>操作中心</text>
+  <radio-group class="option" bindchange="radioChange4">
+    <label class="option">
+      <radio checked="" value="0" name="4">差</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="1" name="4">良</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="2" name="4">优</radio>
+    </label>
+  </radio-group>
+</view>
+<view class='item'>
+  <text>财务中心</text>
+  <radio-group class="option" bindchange="radioChange5">
+    <label class="option">
+      <radio checked="" value="0" name="5">差</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="1" name="5">良</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="2" name="5">优</radio>
+    </label>
+  </radio-group>
+</view>
+<view class='item'>
+  <text>人力行政中心</text>
+  <radio-group class="option" bindchange="radioChange6">
+    <label class="option">
+      <radio checked="" value="0" name="6">差</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="1" name="6">良</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="2" name="6">优</radio>
+    </label>
+  </radio-group>
+</view>
+<view class='item'>
+  <text>组织发展部</text>
+  <radio-group class="option" bindchange="radioChange7">
+    <label class="option">
+      <radio checked="" value="0" name="7">差</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="1" name="7">良</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="2" name="7">优</radio>
+    </label>
+  </radio-group>
+</view>
+
+
+
+<view class='item'>
+  <text>法务部</text>
+  <radio-group class="option" bindchange="radioChange8">
+    <label class="option">
+      <radio checked="" value="0" name="8">差</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="1" name="8">良</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="2" name="8">优</radio>
+    </label>
+  </radio-group>
+</view>
+<view class='item'>
+  <text>数据与信息中心</text>
+  <radio-group class="option" bindchange="radioChange9">
+    <label class="option">
+      <radio checked="" value="0" name="9">差</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="1" name="9">良</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="2" name="9">优</radio>
+    </label>
+  </radio-group>
+</view>
+<view class='item'>
+  <text>投资管理部</text>
+  <radio-group class="option" bindchange="radioChange10">
+    <label class="option">
+      <radio checked="" value="0" name="10">差</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="1" name="10">良</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="2" name="10">优</radio>
+    </label>
+  </radio-group>
+</view>
+<view class='item'>
+  <text>签证中心</text>
+  <radio-group class="option" bindchange="radioChange11">
+    <label class="option">
+      <radio checked="" value="0" name="11">差</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="1" name="11">良</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="2" name="11">优</radio>
+    </label>
+  </radio-group>
+</view>
+
+<view class='item'>
+  <text>服务质量管理部</text>
+  <radio-group class="option" bindchange="radioChange12">
+    <label class="option">
+      <radio checked="" value="0" name="12">差</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="1" name="12">良</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="2" name="12">优</radio>
+    </label>
+  </radio-group>
+</view>
+
+
+<view class='item'>
+  <text>结算中心</text>
+  <radio-group class="option" bindchange="radioChange13">
+    <label class="option">
+      <radio checked="" value="0" name="13">差</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="1" name="13">良</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="2" name="13">优</radio>
+    </label>
+  </radio-group>
+</view>
+
+
+<view class='item'>
+  <text>美惠</text>
+  <radio-group class="option" bindchange="radioChange14">
+    <label class="option">
+      <radio checked="" value="0" name="14">差</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="1" name="14">良</radio>
+    </label>
+    <label class="option mr40">
+      <radio checked="" value="2" name="14">优</radio>
+    </label>
+  </radio-group>
+</view>
+
+
+<button class='tp' bindtap="addStatus">提交</button>

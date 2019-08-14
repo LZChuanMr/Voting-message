@@ -1,0 +1,26 @@
+{
+  "pages": [
+    
+    "pages/zhuc/zhuc",
+    "pages/login/login",
+    "pages/logs/logs",       
+     
+    "pages/index/index",
+    "pages/manual/manual",
+    "pages/rule/rule",
+    "pages/message/message",
+    "pages/messageDetail/messageDetail"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 15000, 
+    "downloadFile": 15000 
+  }
+}

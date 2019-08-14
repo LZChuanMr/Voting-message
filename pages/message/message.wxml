@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="msg-box">
+<image src='../../image/000.png' class='tt'></image>
+<!--留言-->
+   <view class="send-box">
+      <input bindinput="changeInputValue" class="input" type="text" value="{{inputVal}}" placeholder="请输入留言……" placeholder-class="place-input"/>
+      <button size="mini" type="primary" bindtap="addMsg">添加</button>
+   </view>
+   <!--留言列表-->
+   <text class="msg-info" wx:if="{{msgData.length==0}}">暂无留言……^_^</text>
+
+
+   <view  wx:for="{{msgData}}" wx:key="{{that}}">
+       <view class="news" bindtap="goTodetail" data-id="{{item.messageId}}" id="{{item.messageId}}">
+          <view class="textBlock">
+            <view class="newsTitle">{{item.msg}}</view>
+            <view class="newsTitle">{{item.content}}</view>
+          </view>
+        </view>
+   </view>
+</view>

@@ -1,0 +1,15 @@
+
+<view class='bg'> </view>
+<view class='changeInfo'>
+
+  <image src='../../image/000.png' class='img01'></image>
+
+  <view class='changeInfoName'>
+     <input placeholder='请输入手机号'  type='text' bindinput='getPhoneNumValue' value='{{phoneNum}}'/> 
+  </view>
+  <view class='changeInfoName'>
+     <input placeholder='请输入密码' type='password' bindinput='getPasswordValue' value='{{password}}' /> 
+  </view>
+  <button class='changeBtn' bindtap='save'>点击登录</button>
+</view>
+

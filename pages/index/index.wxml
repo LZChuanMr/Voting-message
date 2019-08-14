@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="container">
+    <image src='../../image/000.png' class='tt'></image>
+        <navigator url='../rule/rule'>
+          <view class="slide-image" >
+            <image src='../../image/01.jpg' style='width:100%;height:100%'></image>
+          </view>
+        </navigator>
+        <navigator url='../message/message' >
+          <view class="slide-image" >
+            <image src='../../image/02.jpg' style='width:100%;height:100%'></image>
+          </view>
+        </navigator>
+        <navigator url='../manual/manual'>
+          <view class="slide-image">
+            <image src='../../image/03.jpg' style='width:100%;height:100%'></image>
+          </view>
+        </navigator>
+<scroll-view  scroll-y style="height:100%" bindscroll="scroll" scroll-with-animation='true' enable-back-to-top='true' >
+  <!--Tab布局-->
+  <view class='title'>
+    <view class='titleSel' bindtap='titleClick' data-idx='0'>
+      <text bindtap="onLoad">最新投票</text>
+      <hr class="{{0 == currentIndex ? 'headerLineSel' : 'headerLineUnsel'}}" />
+    </view>
+    
+    <view class='titleSel' bindtap='titleClick' data-idx='1'>
+      <text bindtap="history">历史投票</text>
+      <hr class="{{1 == currentIndex ? 'headerLineSel' : 'headerLineUnsel'}} " />
+    </view>
+  </view>
+
+  <!--内容布局-->
+  <swiper class='swiper' bindchange='pagechange' current='{{currentIndex}}'>
+    <swiper-item class='swiper'>
+        <image class='zy'  data-index="{{0}}" src='../../image/05.jpg'></image>
+        <text wx:for="{{you}}" wx:key="*this" class="bm">{{item.maxVot}}</text>
+        
+        <image class='zy' data-index="{{1}}" src='../../image/04.jpg'></image>
+        <text wx:for="{{cha}}"  wx:key="*this" class="bm">{{item.minVot}}</text>
+          
+    </swiper-item>
+    <swiper-item class='swiper' class='swiper'>
+         <image class='zy' src='../../image/06.png'></image>
+         <text wx:for="{{you}}" wx:key="*this" class="bm">{{item.maxVot}}</text>
+        <image class='zy' src='../../image/07.png'></image>
+        <text wx:for="{{cha}}"  wx:key="*this" class="bm">{{item.minVot}}</text>
+    </swiper-item>
+  </swiper>
+</scroll-view>
+
+    <navigator url='../logs/logs' class='tp'>
+          我要投票
+    </navigator>  
+</view>
